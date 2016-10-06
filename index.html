@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=stylesheets/stylesheet.css rel=stylesheet>
 
     <title>Juan Insuasti's Portafolio</title>
 
@@ -21,36 +22,44 @@
   </head>
 
   <body>
+    <header id="top">
+      <!--Basic Navbar-->
+      <img alt=bg src=images/stock-code.jpeg id=bg-cover width="1920" height="1171">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
 
-    <!--Basic Navbar-->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand">Juan Insuasti's Portafolio</a>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Juan Insuasti</a>
+          </div> <!-- /.navabar-header -->
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#top">About me</a></li>
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-  <!-- Jumbotron -->
+    <main>
+    <!-- Jumbotron -->
 
-    <section class="container">
-      <div class="jumbotron">
-        <h1>SAPUI5 - Medical History App</h1>
-        <h2>Test</h2>
-        <p></p>
-      </div> <!--end of Jumbotron-->
-    </section> <!--end of container-->
-
-  <!-- Jumbotron -->
-
-    <section class="container">
-      <div class="jumbotron">
-        <h1>Mathbirthdays</h1>
-        <h2>Test</h2>
-        <p></p>
-      </div> <!--end of Jumbotron-->
-    </section> <!--end of container-->
-
+      <section id="profile-row">
+        <div class="container">
+          <div class="jumbotron">
+            <h1>Frontend Developer</h1> <h2>Determined / Experienced</h2>
+            <h3>Electronics Engineer with 4+ years of experience. Self-taught, highly motivated looking forward to facing new and demanding challenges. Passionate about innovation through research and education. </h3>
+          </div>
+        </div>
+      </section> <!--end of container-->
 
 </body>
 
