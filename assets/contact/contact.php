@@ -4,8 +4,8 @@
 	* Change the email address with your email address
 	*/
 
-	$to = "example@domain.com"; #you will get all mails in this address
-		
+	$to = "juan.insuasti@gmail.com"; #you will get all mails in this address
+
 	/**
 	* @var $name
 	* @var $from
@@ -19,7 +19,7 @@
 	* You can use the tags inside the $mailBody demo
 	* to make your own message structure.
 	*/
-		 
+
 	$from 		= trim($_POST['email']); 	#Sender Mail
 	$message 	= trim($_POST['message']); 	#Sender Message
 	$name 		= trim($_POST['name']); 	#Sender Name
@@ -35,7 +35,7 @@
 
 	$subject 	= "{$mailTopic} - [CONTACT]";	#Customize subject here
 	$date 		= gmdate("m/d/Y g:i A");		#Current Date & Time
-		
+
 	#Message Body
 	$mailBody = "
 	<html>
@@ -49,20 +49,20 @@
 	<strong>PHONE:</strong> {$phone}<br />
 	</p>
 	<p>
-	{$message}	
+	{$message}
 	<br><br><br>
 	---------------------------------
 	<br>Date: {$date}
 	</p>
 	</body>
 	</html>";
-	
+
 	$headers = "Content-type: text/html\r\n";
-		
+
 	#send the mail (if not empty)
 	if(!empty($from) && !empty($message) && !empty($name)){
 		$success = mail($to, $subject, $mailBody, $headers, "-f$from");
-		
+
 	#redirect to success page
 		if ($success){
 			echo "success";
